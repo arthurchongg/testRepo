@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Caveat", cursive;
+}
+
+.container {
+  text-align: center;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 60px;
+}
+.float-up {
+  opacity: 0;
+  animation: floatUp 1s ease-out forwards;
+}
+
+.float-up[data-delay="0.5s"] {
+  animation-delay: 0.5s;
+}
+
+.float-up[data-delay="5s"] {
+  animation-delay: 5s;
+}
+
+.float-up[data-delay="2s"] {
+  animation-delay: 2s;
+}
+
+.name-input {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.outside-viewport {
+  position: absolute;
+  top: 100vh; /* Position the element just outside the viewport */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0; /* Initially hide the element */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.spacer {
+  height: 100vh; /* Adjust this value as needed */
+}
+
+.birthday {
+  background-color: #f5e050;
+  height: 100vh;
+}
+
+.party {
+  background-color: black;
+  height: 100vh;
+}
+.party-time {
+  color: white;
+  margin-bottom: 0px;
+}
+.family-container {
+  display: flex;
+  justify-content: center;
+}
+.kwids {
+  width: 25%;
+  height: auto;
+  max-width: 100vw;
+}
+.party-video {
+  width: 25%;
+  height: auto;
+  max-width: 100vw;
+}
+
+.container {
+  height: 100vh;
+}
+
+.welcome-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
